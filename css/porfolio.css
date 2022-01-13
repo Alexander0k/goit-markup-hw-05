@@ -37,6 +37,23 @@ img {
   border: 1px solid #eeeeee;
 }
 
+/*--------------------- MAIN -----------------------*/
+
+.current {
+  color: #2196f3;
+  position: relative;
+}
+.current::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  position: absolute;
+  background-color: #2196f3;
+  left: 0;
+  bottom: -28px;
+}
+
 /*--------------------- HEADER -----------------------*/
 .header {
   background-color: #ffffff;
@@ -221,6 +238,31 @@ img {
 }
 
 /*--------------------- PORTFOLIO -----------------------*/
+
+.portfolio-hover {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-hover-text {
+  padding: 63px 24px;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms linear;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.portfolio-hover:hover .portfolio-hover-text {
+  transform: translateY(0);
+}
 
 .portfolio-per {
   font-weight: normal;
