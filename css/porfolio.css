@@ -54,6 +54,10 @@ img {
   bottom: -28px;
 }
 
+.active {
+  color: #2196f3;
+}
+
 /*--------------------- HEADER -----------------------*/
 .header {
   background-color: #ffffff;
@@ -114,6 +118,7 @@ img {
   line-height: 1.33;
   letter-spacing: 0.02em;
   color: #212121;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link:focus,
 .header-link:hover {
@@ -130,6 +135,7 @@ img {
   justify-self: center;
   align-items: center;
   text-align: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-mail:focus,
@@ -149,6 +155,7 @@ img {
   justify-self: center;
   align-items: center;
   text-align: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-mail:hover .header-social-mail,
@@ -163,6 +170,7 @@ img {
 
 .header-social-mail {
   margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-social-tel {
@@ -170,6 +178,10 @@ img {
   display: flex;
   align-items: center;
   justify-self: center;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.active {
+  color: #2196f3;
 }
 
 /*--------------------- BUTTON -----------------------*/
@@ -187,13 +199,14 @@ img {
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
-  background: #f5f4fa;
+  background-color: #f5f4fa;
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-menu:focus,
 .button-menu:hover {
-  background: #2196f3;
+  background-color: #2196f3;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -286,11 +299,15 @@ img {
   box-sizing: border-box;
   margin-bottom: 30px;
   text-align: left;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-sizing 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover,
 .portfolio-item:focus {
-  background: #ffffff;
+  background-color: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -429,12 +446,14 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-icon {
   fill: #ffffff;
   width: 20px;
   height: 20px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover,

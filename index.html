@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
             integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -20,12 +21,12 @@
         <div class="conteiner">
         <div class="header-conteiner">
         <nav class="header-nav">
-            <a class="link header-logo" href="/" class="header-logo">
+            <a class="link header-logo animate__animated animate__bounce" href="/" class="header-logo">
                 <span lang="en" class="header-logo-web">Web</span>
                 <span lang="en" class="header-logo-studio">Studio</span>
             </a>
             <ul class="list header-menu">
-                <li class="header-item "><a class="link header-link current" href="./index.html">Студия</a></li>
+                <li class="header-item "><a class="link header-link current active" href="./index.html">Студия</a></li>
                 <li class="header-item"><a class="link header-link" href="./porfolio.html">Портфолио</a></li>
                 <li class="header-item"><a class="link header-link" href="">Контакты</a></li>
             </ul>
@@ -56,7 +57,7 @@
         <section class="hero">
             <div class="conteiner hero-conteiner">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button  class="hero-btn " type="button" data-modal-open>Заказать услугу</button>
+                <button  class="hero-btn " type="button" data-modal-open >Заказать услугу</button>
             </div>
             
 
@@ -404,6 +405,16 @@
             </div>
         </div>
     </footer>
+    <!------------------MODAL------------------>
+    <div class="modal is-hidden" data-modal>
+        <div class="modal-oupen">
+        <button type="button" class="modal-close" data-modal-close>
+            <svg class="modal-icon" >
+                <use href="./images/icons.svg#icon-vector"></use>
+            </svg>
+        </button>
+        </div>
+    </div>
     <script src="./js/modal.js"></script>
 </body>
 </html>
